@@ -1,0 +1,29 @@
+{
+  "connection": "default",
+  "collectionName": "projects",
+  "info": {
+    "name": "project",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "caption": {
+      "type": "text"
+    },
+    "mainImage": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "slug": {
+      "type": "string"
+    }
+  }
+}
