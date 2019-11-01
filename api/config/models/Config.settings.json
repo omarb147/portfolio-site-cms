@@ -7,20 +7,23 @@
   },
   "options": {
     "increments": true,
-    "timestamps": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
     "comment": ""
   },
   "attributes": {
     "siteName": {
       "type": "string"
     },
-    "siteDescription": {
-      "type": "string"
-    },
     "sidebarImage": {
       "model": "file",
       "via": "related",
       "plugin": "upload"
+    },
+    "siteDescription": {
+      "type": "text"
     }
   }
 }
