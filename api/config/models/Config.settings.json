@@ -1,0 +1,26 @@
+{
+  "connection": "default",
+  "collectionName": "configs",
+  "info": {
+    "name": "config",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "siteName": {
+      "type": "string"
+    },
+    "siteDescription": {
+      "type": "string"
+    },
+    "sidebarImage": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    }
+  }
+}
