@@ -7,12 +7,16 @@
   },
   "options": {
     "increments": true,
-    "timestamps": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
     "comment": ""
   },
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "caption": {
       "type": "text"
@@ -20,9 +24,36 @@
     "mainImage": {
       "model": "file",
       "via": "related",
-      "plugin": "upload"
+      "plugin": "upload",
+      "required": true
     },
     "slug": {
+      "type": "string",
+      "required": true
+    },
+    "pageImage": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "projectDetails": {
+      "required": true,
+      "type": "text"
+    },
+    "productPageCaption": {
+      "type": "text"
+    },
+    "githubRepo": {
+      "type": "string"
+    },
+    "demoLink": {
+      "type": "string"
+    },
+    "projectStatus": {
+      "type": "string"
+    },
+    "technologies": {
       "type": "string"
     }
   }

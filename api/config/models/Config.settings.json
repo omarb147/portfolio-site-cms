@@ -24,6 +24,15 @@
     },
     "siteDescription": {
       "type": "text"
+    },
+    "github": {
+      "type": "string"
+    },
+    "linkedin": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
     }
   }
 }
