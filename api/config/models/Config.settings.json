@@ -33,6 +33,12 @@
     },
     "email": {
       "type": "string"
+    },
+    "homepageHeading": {
+      "type": "string"
+    },
+    "homepageAboutme": {
+      "type": "text"
     }
   }
 }
