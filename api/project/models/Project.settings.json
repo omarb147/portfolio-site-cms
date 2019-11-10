@@ -15,8 +15,7 @@
   },
   "attributes": {
     "title": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "caption": {
       "type": "text"
@@ -28,14 +27,12 @@
       "required": true
     },
     "slug": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "pageImage": {
       "model": "file",
       "via": "related",
-      "plugin": "upload",
-      "required": true
+      "plugin": "upload"
     },
     "projectDetails": {
       "required": true,
